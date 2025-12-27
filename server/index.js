@@ -14,6 +14,10 @@ app.use(cors());
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.json({ text: "server is working" });
+});
+
 app.post("/shorten", async (req, res) => {
     const { url } = req.body;
     if (!url) return res.status(400).json({ error: "URL is required" });
