@@ -5,7 +5,7 @@ const { eq } = require("drizzle-orm");
 const { createUniqueCode } = require("./lib/createUniqueCode");
 const app = express();
 const PORT = 4000;
-const BaseUrl = "http://localhost:4000";
+const BaseUrl = "https://url-shortener-beta-bice.vercel.app";
 
 const { db } = require("./db");
 const cors = require("cors");
@@ -61,6 +61,6 @@ app.get("/:code", async (req, res) => {
     res.redirect(result[0].originalUrl);
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//     console.log(`Server is running on port ${PORT}`);
+// });

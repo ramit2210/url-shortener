@@ -7,13 +7,16 @@ function App() {
 
     async function handleSubmit(e) {
         e.preventDefault();
-        const res = await fetch("http://localhost:4000/shorten", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ url }),
-        });
+        const res = await fetch(
+            "https://url-shortener-beta-bice.vercel.app/shorten",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ url }),
+            }
+        );
 
         const data = await res.json();
         // console.log(data);
