@@ -4,7 +4,7 @@ const { urls } = require("./db/schema/urlSchema");
 const { eq } = require("drizzle-orm");
 const { createUniqueCode } = require("./lib/createUniqueCode");
 const app = express();
-const PORT = process.env.SERVER_PORT;
+const PORT = 4000;
 const BaseUrl = "http://localhost:4000";
 
 const { db } = require("./db");
