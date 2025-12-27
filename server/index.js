@@ -61,6 +61,6 @@ app.get("/:code", async (req, res) => {
     res.redirect(result[0].originalUrl);
 });
 
-// app.listen(PORT, () => {
-//     console.log(`Server is running on port ${PORT}`);
-// });
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
