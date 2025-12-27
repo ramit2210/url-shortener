@@ -1,0 +1,10 @@
+POST http://localhost:4000/shorten
+Content-Type: application/json
+
+{
+    "url": "https://www.amazon.in/b/ref=vpr_b2c_pqc_reg/?_encoding=UTF8&ie=UTF8&node=80662860031&pd_rd_w=klnAI&content-id=amzn1.sym.cf5632b9-cf46-4edc-8eb8-62d7de4b16d8&pf_rd_p=cf5632b9-cf46-4edc-8eb8-62d7de4b16d8&pf_rd_r=0RMYN7R3BNNRHD1PJFWR&pd_rd_wg=D3jDY&pd_rd_r=677c9faf-dd5a-47b4-b4cb-b5767333db2f&ref_=pd_hp_d_atf_unk"
+}
+
+###
+
+GET http://localhost:4000/n02ye7
